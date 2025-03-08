@@ -1,0 +1,292 @@
+.booking__outer{
+    width:100%;
+    height:fit-content;
+}
+.booking__inner{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.booking__inner__left{
+    width:fit-content;
+    height:fit-content;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.booking__inner__left__heading{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.booking__each{
+    width:300px;
+    height:fit-content;
+    margin-bottom: 2rem;
+}
+.booking__each__heading{
+    width:100%;
+    height:fit-content;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.booking__each__field{
+    width:100%;
+    height:fit-content;
+}
+.booking__inputfield{
+    width:95%;
+    height:3rem;
+    outline:none;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border:2px solid black
+}
+.booking__left__button{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.booking__left__button__each{
+    width:fit-content;
+    height:fit-content;
+    padding: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border:2px solid black;
+    font-size: 14px;
+    margin-right: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.booking__left__button__each:hover{
+    background-color: black;
+    transition-duration: 0.6s;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+.booking__inner__right{
+    width:50%;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+.booking__inner__right__heading{
+    width:100%;
+    height:fit-content;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.booking__inner__right__time{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(81, 81, 81);
+    font-weight: 800;
+    justify-content: center;
+}
+.booking__inner__right__display{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+
+.booking__inner__right__heading__top{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.booking__inner__right__heading__mobile{
+    width:fit-content;
+    height:fit-content;
+    display: flex;
+    font-weight: 600;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:1264px)
+{
+    .booking__inner{
+        justify-content:space-around;
+    }
+    .booking__inner__right{
+        width:60%;
+    }
+}
+
+
+@media screen and (max-width:1053px)
+{
+    .booking__each{
+        width:260px;
+        height:fit-content;
+        margin-bottom: 2rem;
+    }
+    .booking__inner__left__heading{
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .booking__each__heading{
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    .booking__inner__right{
+        width:70%;
+    }
+}
+
+
+
+@media screen and (max-width:968px)
+{
+    .booking__inner{
+        flex-wrap: wrap;
+    }
+    .booking__each{
+        width:350px;
+        height:fit-content;
+        margin-bottom: 2rem;
+    }
+    .booking__inner__left__heading{
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .booking__each__heading{
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    .booking__inner__right{
+        width:90%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width:769px)
+{
+    .booking__each{
+        width:350px;
+        height:fit-content;
+        margin-bottom: 1rem;
+    }
+    .booking__inner__left__heading{
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .booking__each__heading{
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    .booking__inner__left{
+        margin-top: 1rem;
+    }
+    .booking__inner__right{
+        width:90%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:702px)
+{
+    .booking__each{
+        width:320px;
+        height:fit-content;
+        margin-bottom: 1rem;
+    }
+    .booking__inner__left__heading{
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .booking__each__heading{
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    .booking__inner__left{
+        margin-top: 1rem;
+    }
+    .booking__inner__right{
+        width:90%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width:605px)
+{
+    .booking__each{
+        width:290px;
+        height:fit-content;
+        margin-bottom: 1rem;
+    }
+    .booking__inner__left__heading{
+        font-weight: 800;
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+    .booking__each__heading{
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    .booking__inner__left{
+        margin-top: 1rem;
+    }
+    .booking__inner__right{
+        width:90%;
+        margin-bottom: 2rem;
+    }
+    .booking__inner__right__heading{
+        display: none;
+    }
+    .booking__inner__right__heading__mobile{
+        display: flex;
+    }
+}

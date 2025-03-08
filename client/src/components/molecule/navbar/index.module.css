@@ -1,0 +1,107 @@
+.navbar__outer{
+    width:100%;
+    height:4.5rem;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+}
+.navbar__inner{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* 
+.navbar__left{
+    width: 30%;
+    height:100%;
+    border:1px solid red;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    padding-right: 1rem;
+}
+.navbar__left__cont{
+    width:80%;
+    height:100%;
+    border:1px solid green;
+}
+
+
+
+.navbar__right{
+    width: 40%;
+    height:100%;
+    border:1px solid red;
+    padding-left: 1rem;
+    padding-right: 1rem;
+} */
+
+.navbar__logo{
+    width:70px;
+    height:60px;
+    color:black;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+.navbar__logo:hover{
+    transition-duration: 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navbar__inner__left{
+    width:fit-content;
+    height:100%;
+}
+.navbar__inner__right{
+    width:fit-content;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar__center__each{
+    width:fit-content;
+    height:fit-content;
+    padding: 10px;
+    padding-left:1rem;
+    padding-right:1rem;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 14px;
+    color:black;
+    text-decoration: none;
+    border:2px solid black;
+    margin-right: 1rem;
+}
+.navbar__center__each:hover{
+    transition-duration: 0.6s;
+    color:white;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar__inner__right__mobile{
+    width:fit-content;
+    height:100%;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:450px)
+{
+    .navbar__inner__right__mobile{
+        display: flex;
+    }
+    .navbar__inner__right{
+        display: none;
+    }
+}
+
+
