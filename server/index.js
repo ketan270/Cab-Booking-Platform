@@ -11,7 +11,6 @@ const userBooking = require("./routes/userBooking")
 const AllCabBooking = require("./routes/allCabBookings")
 
 
-
 mongoose.set('strictQuery',true);
 const app=express()
 app.use(cors());
