@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabbiez - User Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .user-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .user-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .user-card p {
+            margin: 5px 0;
+            color: var(--text-color);
+        }
+        #user-data-container {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h2>User Data</h2>
+            <p>Registered users in the system</p>
+        </div>
+        <div id="user-data-container">
+            <% if (users && users.length > 0) { %>
+                <% users.forEach(function(user) { %>
+                    <div class="user-card">
+                        <h3><%= user.name %></h3>
+                        <p><strong>Email:</strong> <%= user.email %></p>
+                        <% if (user.phone) { %>
+                            <p><strong>Phone:</strong> <%= user.phone %></p>
+                        <% } %>
+                    </div>
+                <% }); %>
+            <% } else { %>
+                <p>No users found.</p>
+            <% } %>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

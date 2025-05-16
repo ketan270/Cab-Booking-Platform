@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabbiez - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="form-container">
+            <div class="brand">
+                <div class="logo">
+                    <i class="fas fa-taxi"></i>
+                </div>
+                <h1>Cabbiez</h1>
+            </div>
+            
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Create Account</h2>
+                    <p>Join Cabbiez for seamless cab booking</p>
+                </div>
+                
+                <form id="registerForm" action="/register" method="POST">
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Full Name</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    
+                    <button type="submit">Create Account <i class="fas fa-arrow-right"></i></button>
+                </form>
+                
+                <div class="form-footer">
+                    <p>Already have an account? <a href="/">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-container signup">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Ready to Ride?</h2>
+                <p>Create an account and enjoy convenient cab booking at your fingertips</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
